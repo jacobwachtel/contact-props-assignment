@@ -44,6 +44,8 @@
   color: #eee;
 }
 
+
+
 .contactContainer {
   display: flex;
   padding: 20px;
@@ -89,4 +91,8 @@
 
 .title {
   margin-left: 30px;
+}
+
+.title-count {
+  color: rgb(156, 85, 78);
 }

@@ -12,7 +12,7 @@ function Contactslist({users}) {
     return (
         <div className='Contactslist'>
             <div className="title">
-                <h1>Contacts</h1>
+                <h1><span className='title-count'>{users && users.length}</span> - Contacts in Your List</h1>
             </div>
             <div className="contactArrays">
                     {users && users.map((user, index) => (
