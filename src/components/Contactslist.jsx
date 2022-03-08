@@ -1,11 +1,12 @@
 import React from 'react'
 import Contact from './Contact'
+import avatar from '../avatar.png'
 
 
 
-function Contactslist({contactArray}) {
+function Contactslist({users}) {
 
-    
+    console.log(users);
 
 
     return (
@@ -14,15 +15,14 @@ function Contactslist({contactArray}) {
                 <h1>Contacts</h1>
             </div>
             <div className="contactArrays">
-                {contactArray.map((contact, index) => (
-                <Contact
-                    key={index}
-                    image={contact.image}
-                    name={contact.name}
-                    phone={contact.phone}
-                    icon={contact.icon}
-                />
-                ))}
+                    {users && users.map((user, index) => (
+                    <Contact
+                        key={index}
+                        name={user.name}
+                        phone={user.phone}
+                        image={user.image ? user.image : avatar}
+                    />
+                    ))}
          </div>
         </div>
     )

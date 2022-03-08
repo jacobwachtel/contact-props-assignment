@@ -7,7 +7,9 @@ function Contact({ image, name, phone, icon}) {
         <div className='contactContainer'>
             <div className="container__icon">{icon}</div>
             <div className="imageContainer">
-                <img src={image} alt=""></img>
+                <img src={image} alt="profile pic"
+                    style={{width: '80px', height: '80px'}}
+                ></img>
             </div>
             
             <div className="contactInfo">
